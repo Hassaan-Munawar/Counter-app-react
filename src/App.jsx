@@ -2,19 +2,15 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-
   let [num, setNum] = useState(0)
 
   let inc = () => {
-   num < 20 ? setNum(num + 1):
-   alert('Number is twenty..')
+   setNum(num + 1)
   }
 
   let dec = () => {
-
     num > 0 ? setNum(num - 1) :
     alert('Number is zero..')
-    
   }
 
   return (
